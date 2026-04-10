@@ -1,0 +1,169 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// ... the rest of your variables ($primary, etc.) and code go below this ...
+
+// Variables
+$primary: #7843e9;
+$font-family: 'Open Sans', sans-serif;
+
+// Base Styles
+body {
+  font-family: $font-family;
+}
+
+// Navbar Styles
+.navbar {
+  background-color: #fff;
+  padding: 1rem 0;
+  transition: box-shadow 0.3s ease;
+
+  .nav-link {
+    font-weight: 600;
+    color: #333;
+    &:hover { color: $primary; }
+  }
+}
+
+// Hero Styles
+.header {
+  padding: 100px 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  h1 { line-height: 1.2; }
+  
+  .decoration-star {
+    position: absolute;
+    width: 60px;
+    &.star-1 { top: -20px; right: -20px; }
+    &.star-2 { bottom: -20px; left: -20px; }
+  }
+}
+
+// Custom spacing
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.stats {
+  .stat-item {
+    p {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      opacity: 0.8;
+    }
+  }
+}
+// Details Section
+.details {
+  .details-content {
+    h2 {
+      line-height: 1.2;
+    }
+    li {
+      font-size: 1.1rem;
+      color: #555;
+    }
+  }
+
+  .details-image-container {
+    img {
+      transition: transform 0.4s ease;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+// Services Section
+.service-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(120, 67, 233, 0.1) !important;
+    border: 1px solid rgba(120, 67, 233, 0.2);
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(120, 67, 233, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+// Project Cards
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    .card-img-top {
+      transform: scale(1.1);
+    }
+  }
+
+  .project-img-container {
+    height: 250px;
+    .card-img-top {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  }
+}
+
+// Testimonials
+.testimonial-card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+
+  p {
+    line-height: 1.7;
+    color: #666;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 25px rgba(120, 67, 233, 0.15) !important;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+// Footer
+.footer {
+  background-color: #0d0d0d !important;
+  
+  ul li a:hover {
+    color: $primary !important;
+  }
+}
+
+// Global Smooth Scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// Button Hover Transition
+.btn {
+  transition: all 0.3s ease;
+}
+/* Add this to your existing CSS file */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
